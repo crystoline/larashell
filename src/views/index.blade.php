@@ -36,7 +36,7 @@
     $php_cmd = ' env PATH="/opt/php70/bin:$PATH" php';
 @endphp
     <form id="cons" method="post" action="" target="output" style="max-width: 600px">
-        {{ csrf_token() }}
+        {{ csrf_field() }}
         <fieldset>
             <legend>Run Commands</legend>
             <div class="ui icon buttons">
