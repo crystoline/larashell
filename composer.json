@@ -1,0 +1,38 @@
+{
+    "name": "crystoline/larashell",
+    "description": "Laravel: Run shell command without shell access over http",
+    "type": "project",
+
+    "keywords": ["laravel", "shell", "console"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adekunle Adekoya",
+            "email": "crystoline@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6",
+        "illuminate/support": "^5.5"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Crystoline\\LaraShell\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Crystoline\\LaraShell\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Crystoline\\LaraShell\\LaraShellProvider"
+            ]
+        }
+    }
+}
